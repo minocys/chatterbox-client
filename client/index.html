@@ -7,6 +7,7 @@
 
     <!-- dependencies -->
     <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
     <!-- your scripts -->
     <script src="env/config.js"></script>
     <script src="scripts/app.js"></script>
@@ -14,7 +15,25 @@
   <body>
     <div id="main">
       <h1>chatterbox</h1>
-      <!-- Your HTML goes here! -->
+      <form action="#" id="send" method="post">
+        <input type="text" name="message" id="message"/>
+        <input type="submit" name="submit" class="submit"/>
+      </form>
+      <div class='filters'>
+          Filter:
+          <a href="#" id="all">All Twits</a>
+          |
+          <a href="#" id="filter-user">My Twits</a>
+          |
+          <a href="#" id="filter">Friends</a>
+      </div>
+      <div id="rooms">
+        Room:
+        <select id="roomSelect">
+          <option selected>all</option>
+        </select>
+      </div>
+      <div id="chats"></div>
     </div>
   </body>
 </html>

@@ -47,26 +47,37 @@ body {
 }
 
 form {
-    padding: 20px;
-    padding-left: 0;
-    margin-bottom: 20px;
+    padding: 20px 0 10px 0;
 }
 
 form input[type=text] {
     margin-right: 10px;
-    width: 70%;
+    width: 78%;
     font-size: 12px;
     padding: 5px;
+}
+
+form input[type=submit]{
+    width: 15%;
+}
+
+#chats{
+    margin-top:50px;
 }
 
 .chat {
     padding: 5px;
     margin-bottom: 5px;
     background-color: #eee;
+    padding: 10px;
+    overflow: hidden;
 }
 
 .chat .username {
-    font-weight: 800;
+    font-family:verdana;
+    display:block;
+    margin-bottom:5px;
+    overflow: hidden;
 }
 
 .chat:hover {
@@ -81,4 +92,19 @@ form input[type=text] {
 
 .spinner img {
     padding: 10px;
+}
+
+.filters {
+    margin-bottom: 20px;
+    width: 100%;
+    display:block;
+    float:left;
+    overflow: hidden;
+}
+
+#rooms {
+    margin-bottom:20px;
+    width:100%;
+    display:block;
+    overflow: hidden;
 }
